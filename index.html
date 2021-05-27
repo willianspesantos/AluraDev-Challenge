@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="asseds/css/reset.css">
+        <link rel="stylesheet" href="asseds/css/style.css">
+        <link rel="stylesheet" href="asseds/css/cabecalho.css">
+        <link rel="stylesheet" href="asseds/css/container.css">
+        <link rel="stylesheet" href="asseds/css/menu.css">
+        <link rel="stylesheet" href="asseds/css/principal.css">
+        <link rel="stylesheet" href="asseds/css/personalizar.css">
+        <link rel="stylesheet" href="asseds/css/corDeFundoCaixaCodigo.css">
+        <link rel="stylesheet" href="asseds/temaHighlight/dracula.css">
+        <link rel="stylesheet" href="asseds/temaHighlight/temaVariado.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <title>AluraDEV</title>
+    </head>
+    <body class="corpo">
+        <header class="cabecalho">
+            <h1 class="logo"><img src="asseds/img/logo.png" alt="logo AluraDEV" class="cabecalho__imagem-logo"></h1>
+            <input type="text" class="cabecalho__barra-pesquisa" placeholder="Busque po algo">
+            <div class="cabecalho__perfil">
+                <img src="asseds/img/foto-perfil.png" alt="foto perfil do usuario logado" class="cabecalho__perfil___imagem">
+                <h2 class="cabecalho__perfil___usuario">Harry</h2>
+                <img src="../asseds/img/botao-menu.png" alt="botao menu" class="botao-hamburgue">
+            </div>
+        </header>
+        <main class="container">
+            <nav class="container__menu">
+                <ul class="container__menu___lista">
+                    <h3 class="container__menu___titulo">menu</h3>
+                    <li class="container__menu___item"><a href="index.html" class="item__link selecionado"><img src="asseds/img/editorCodigo.png" alt="" class="item__imagem">Editor de Código</a></li>
+                    <li class="container__menu___item"><a href="paginas/comunidade.html" class="item__link"><img src="asseds/img/comunidade.png" alt="" class="item__imagem">Comunidade</a></li>                    
+                </ul>
+            </nav>
+            
+            <section container__principal>
+                <div class="caixa-container-principal" data-caixa-container>
+                    <div class="container__principal___textarea">
+                        <code class="hljs" contenteditable="true" aria-label="editor" autofocus="true" data-projeto>
+                           
+                        </code>
+                        <div class="opcao-estilo">
+                            <button class="botao-estilo cor1"></button>
+                            <button class="botao-estilo cor2"></button>
+                            <button class="botao-estilo cor3"></button>
+                        </div>
+                    </div>                    
+                </div>
+                <button class="container__principal___botao">Visualizar com o highlight</button>
+
+            </section>
+            <section class="container__personalizar">
+                <form class="formulario">
+                    <div class="formulario-projeto">
+                        <h3 class="campo-projeto__titulo">seu projeto</h3>
+                        <input type="text" class="campo-projeto__input-projeto" placeholder="Nome do seu projeto">
+                        <textarea name="" id="" class="campo-projeto__textarea-descricao" placeholder="Descrição do seu projeto"></textarea>
+                    </div>
+                    <div class="formulario-personalizar">
+                        <h3 class="container__personalizar___titulo">personalização</h3>
+                        <div class="container__personalizar___opcoes">
+                            <select class="container__personalizar___selecao-linguagem" id="linguagem">
+                                <option class="opcao-linguagem" value="javascript">JavaScript</option>
+                                <option class="opcao-linguagem" value="html">HTML</option>
+                                <option class="opcao-linguagem" value="css">CSS</option>
+                            </select>
+                            <div class="caixa-cores">
+                                <select class="container__personalizar___cores" data-opcaoCor>
+                                    <option class="caixa-cor-0" value="0"></option>                                    
+                                    <option class="caixa-cor-1" value="1"></option>                                    
+                                    <option class="caixa-cor-2" value="2"></option>                                    
+                                    <option class="caixa-cor-3" value="3"></option>                                    
+                                </select> 
+                            </div>
+                        </div>                        
+                    </div>
+                    <button class="container__personalizar___botao" data-botaoAdicionar>Salvar Projeto</button>
+                </form>
+            </section>
+
+        </main>
+
+        <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.7.2/build/highlight.min.js"></script>
+        <script src="index.js"></script>
+        <script src="componentes/corCodigo.js"></script>
+        <script src="componentes/novoProjeto.js"></script>
+        <script src="componentes/adicionarCodigo.js"></script>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+:root {
+    --branco: #FFFFFF;
+    --background-input: #ffffff29;
+    --background-textarea: #000000;
+    --background-botao-salvar: #5081FB;
+    --azul-escuro: #051D3B;
+    --azul-claro: #6bd1ff;
+    --azul: #5081FB;
+}
+
+.corpo {
+    background: var(--azul-escuro);
+    font-family: 'Inter', sans-serif;
+    margin: 2rem;
+}
+
+@media screen and(max-width: 768px) {
+    .corpo{
+        margin: 1rem;
+    }
+}

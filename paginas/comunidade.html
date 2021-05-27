@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../asseds/css/reset.css">
+        <link rel="stylesheet" href="../asseds/css/style.css">
+        <link rel="stylesheet" href="../asseds/css/cabecalho.css">
+        <link rel="stylesheet" href="../asseds/css/container.css">
+        <link rel="stylesheet" href="../asseds/css/menu.css">
+        <link rel="stylesheet" href="../asseds/css/principal.css">
+        <link rel="stylesheet" href="../asseds/css/personalizar.css">
+        <link rel="stylesheet" href="../asseds/css/projetos.css">
+        <link rel="stylesheet" href="../asseds/css/corDeFundoCaixaCodigo.css">
+        <link rel="stylesheet" href="../asseds/temaHighlight/dracula.css">
+        <link rel="stylesheet" href="../asseds/temaHighlight/temaVariado.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <title>Comunidade - AluraDEV</title>
+    </head>
+    <body class="corpo">
+        <header class="cabecalho">
+            <h1 class="logo">
+                <img src="../asseds/img/Logo-tablet.png" alt="logo AluraDEV" class="cabecalho__imagem-logo">
+            </h1>
+            <input type="text" class="cabecalho__barra-pesquisa" placeholder="Busque po algo">
+            <div class="cabecalho__perfil">
+                <img src="../asseds/img/foto-perfil.png" alt="foto perfil do usuario logado" class="cabecalho__perfil___imagem">
+                <h2 class="cabecalho__perfil___usuario">Harry</h2>
+                <img src="../asseds/img/botao-menu.png" alt="botao menu" class="botao-hamburgue">
+            </div>
+        </header>
+        <main class="container">
+            <nav class="container__menu">
+                <ul class="container__menu___lista">
+                    <h3 class="container__menu___titulo">menu</h3>
+                    <li class="container__menu___item"><a href="../index.html" class="item__link"><img src="../asseds/img/editorCodigo.png" alt="" class="item__imagem">Editor de Código</a></li>
+                    <li class="container__menu___item"><a href="comunidade.html" class="item__link selecionado"><img src="../asseds/img/comunidade.png" alt="" class="item__imagem">Comunidade</a></li>                    
+                </ul>
+            </nav>
+            <section class="container__projetos" data-mural>
+                <div class="caixa-projetos">
+                    <div class="caixa-projeto-textarea caixa-cor-1">
+                        <textarea class="container__projetos___textarea">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj) const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res) const unfold = (f, seed) => { const go = (f, seed, acc) => { const res = f(seed) return res ? go(f, res[1], acc.concat([res[0]])) : acc } return go(f, seed, []) }
+                        </textarea>
+                    </div>
+                    <div class="caixa-projeto-descricao">
+                        <h2 class="container__projetos___titulo">Titulo do projeto</h2>
+                        <p class="container__projetos___descricao">Descrição do meu projeto</p>
+                    </div>
+                    <div class="caixa-projeto-footer">
+                        <span class="span-botoes">
+                            <button class="botao-balao">
+                                <img src="../asseds/img/botao-balao.png" alt="botao de comentarios">
+                            </button>
+                            <h4>9</h4>
+                            <button class="botao-coracao">
+                                <img src="../asseds/img/botao-coracao.png" alt="botao amei o projeto">
+                            </button>
+                            <h4>3</h4>
+                        </span>
+                        <span class="cabecalho__perfil">
+                            <img src="../asseds/img/foto-perfil.png" alt="foto perfil do usuario logado" class="cabecalho__perfil___imagem">
+                            <h2 class="cabecalho__perfil___usuario">@Harry</h2>
+                        </span>
+                    </div>                                                        
+                </div>
+                <div class="caixa-projetos">
+                    <div class="caixa-projeto-textarea caixa-cor-2">
+                        <textarea class="container__projetos___textarea">@import url('https://fonts.googleapis.com/css?family=Nova+Mono&display=swap'); * { box-sizing: border-box; } body { min-height: 100vh; background-color: #18181c; display: flex; align-items: center;
+                        </textarea>
+                    </div>
+                    <div class="caixa-projeto-descricao">
+                        <h2 class="container__projetos___titulo">Titulo do projeto</h2>
+                        <p class="container__projetos___descricao">Descrição do meu projeto</p>
+                    </div>
+                    <div class="caixa-projeto-footer">
+                        <span class="span-botoes">
+                            <button class="botao-balao">
+                                <img src="../asseds/img/botao-balao.png" alt="botao de comentarios">
+                            </button>
+                            <h4>9</h4>
+                            <button class="botao-coracao">
+                                <img src="../asseds/img/botao-coracao.png" alt="botao amei o projeto">
+                            </button>
+                            <h4>3</h4>
+                        </span>
+                        <span class="cabecalho__perfil">
+                            <img src="../asseds/img/foto-perfil.png" alt="foto perfil do usuario logado" class="cabecalho__perfil___imagem">
+                            <h2 class="cabecalho__perfil___usuario">@Harry</h2>
+                        </span>
+                    </div>                                             
+                </div>
+                <div class="caixa-projetos">
+                    <div class="caixa-projeto-textarea caixa-cor-3">
+                        <textarea class="container__projetos___textarea">let textureOldGoldURL = "https://assets.codepen.io/911157/matcapCop.jpg";
+                        let modelURL = "https://assets.codepen.io/911157/creativityDoodle_by_Anna_the_Scavenger.glb";                  
+                        // LANDSCAPE / PORTRAIT
+                        let isMobile = /(Android|iPhone|iOS|iPod|iPad)/i.test(navigator.userAgent);
+                        let windowRatio = window.innerWidth / window.innerHeight;
+                        let isLandscape = (windowRatio > 1) ? true : false;                      
+                        </textarea>
+                    </div>
+                    <div class="caixa-projeto-descricao">
+                        <h2 class="container__projetos___titulo">Titulo do projeto</h2>
+                        <p class="container__projetos___descricao">Descrição do meu projeto</p>
+                    </div>
+                    <div class="caixa-projeto-footer">
+                        <span class="span-botoes">
+                            <button class="botao-balao">
+                                <img src="../asseds/img/botao-balao.png" alt="botao de comentarios">
+                            </button>
+                            <h4>9</h4>
+                            <button class="botao-coracao">
+                                <img src="../asseds/img/botao-coracao.png" alt="botao amei o projeto">
+                            </button>
+                            <h4>3</h4>
+                        </span>
+                        <span class="cabecalho__perfil">
+                            <img src="../asseds/img/foto-perfil.png" alt="foto perfil do usuario logado" class="cabecalho__perfil___imagem">
+                            <h2 class="cabecalho__perfil___usuario">@Harry</h2>
+                        </span>
+                    </div>                                             
+                </div>
+                <div class="caixa-projetos">
+                    <div class="caixa-projeto-textarea caixa-cor-4">
+                        <textarea class="container__projetos___textarea"><!-- page heading --> <div class='container container-dark p-y-md'> <div class='header-content'> <h1>Material Search Animation</h1> <h2>Usign CSS Transitions</h2> </div> </div> <!-- page content + floating button --> <div class='container p-y-md'> <div class='control'> <div class='btn-material'></div>
+                        </textarea>
+                    </div>
+                    <div class="caixa-projeto-descricao">
+                        <h2 class="container__projetos___titulo">Titulo do projeto</h2>
+                        <p class="container__projetos___descricao">Descrição do meu projeto</p>
+                    </div>
+                    <div class="caixa-projeto-footer">
+                        <span class="span-botoes">
+                            <button class="botao-balao">
+                                <img src="../asseds/img/botao-balao.png" alt="botao de comentarios">
+                            </button>
+                            <h4>9</h4>
+                            <button class="botao-coracao">
+                                <img src="../asseds/img/botao-coracao.png" alt="botao amei o projeto">
+                            </button>
+                            <h4>3</h4>
+                        </span>
+                        <span class="cabecalho__perfil">
+                            <img src="../asseds/img/foto-perfil.png" alt="foto perfil do usuario logado" class="cabecalho__perfil___imagem">
+                            <h2 class="cabecalho__perfil___usuario">@Harry</h2>
+                        </span>
+                    </div>                                            
+                </div>
+                
+            </section>
+        </main>
+       
+        <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.7.2/build/highlight.min.js"></script>
+        
+        
+        <script src="../componentes/adicionarCodigo.js"></script>
+    </body>
+</html>

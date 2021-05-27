@@ -1,0 +1,73 @@
+.container__principal {
+ width: 100%;
+}
+
+.caixa-container-principal {
+    background: var(--azul-claro);
+    border: none;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    height: 22.875rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    width: 47vw;    
+}
+
+.container__principal___textarea {
+    background: var(--background-textarea);
+    box-sizing: border-box;
+    border-radius: 8px;    
+    height: 18.875rem;
+    resize: none;
+    padding: 3.25rem 1rem 1rem 1rem;
+    position: relative;
+    width: 100%;    
+}
+
+.opcao-estilo {
+    position: absolute;
+    top: 10px;
+}
+
+.botao-estilo {
+    border: none;
+    padding: 0.5rem;    
+    margin-right: 0.5rem;
+    border-radius: 10px;
+}
+
+.cor1 {
+    background: red;
+}
+
+.ativo {
+    border: 1px solid white;
+}
+
+.cor2 {
+    background: yellow;
+}
+
+.cor3 {
+    background: green;
+}
+
+.container__principal___botao {
+    background: rgba(129, 251, 0, 0.08);
+    border: none;
+    border-radius: 8px;
+    color: var(--branco);
+    cursor: pointer;
+    height: 3.5rem;
+    width: 100%;    
+}
+
+@media screen and (max-width: 768px) {
+    .container__principal___botao {
+        margin-bottom: 2.125rem;
+    }
+    .caixa-container-principal {
+        width: 90vw;                
+    }    
+}
