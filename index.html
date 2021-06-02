@@ -21,11 +21,13 @@
     <body class="corpo">
         <header class="cabecalho">
             <h1 class="logo"><img src="asseds/img/logo.png" alt="logo AluraDEV" class="cabecalho__imagem-logo"></h1>
-            <input type="text" class="cabecalho__barra-pesquisa" placeholder="Busque po algo">
-            <div class="cabecalho__perfil">
-                <img src="asseds/img/foto-perfil.png" alt="foto perfil do usuario logado" class="cabecalho__perfil___imagem">
-                <h2 class="cabecalho__perfil___usuario">Harry</h2>
-                <img src="../asseds/img/botao-menu.png" alt="botao menu" class="botao-hamburgue">
+            <div class="input-perfil">
+                <input type="text" class="cabecalho__barra-pesquisa" placeholder="Busque po algo">
+                <div class="cabecalho__perfil">
+                    <img src="asseds/img/foto-perfil.png" alt="foto perfil do usuario logado" class="cabecalho__perfil___imagem">
+                    <h2 class="cabecalho__perfil___usuario">Harry</h2>
+                    <img src="../asseds/img/botao-menu.png" alt="botao menu" class="botao-hamburgue">
+                </div>
             </div>
         </header>
         <main class="container">
@@ -56,13 +58,13 @@
                 <form class="formulario">
                     <div class="formulario-projeto">
                         <h3 class="campo-projeto__titulo">seu projeto</h3>
-                        <input type="text" class="campo-projeto__input-projeto" placeholder="Nome do seu projeto">
-                        <textarea name="" id="" class="campo-projeto__textarea-descricao" placeholder="Descrição do seu projeto"></textarea>
+                        <input type="text" class="campo-projeto__input-projeto" placeholder="Nome do seu projeto" data-nome-projeto>
+                        <textarea name="" id="" class="campo-projeto__textarea-descricao" placeholder="Descrição do seu projeto" data-descricao-projeto></textarea>
                     </div>
                     <div class="formulario-personalizar">
                         <h3 class="container__personalizar___titulo">personalização</h3>
                         <div class="container__personalizar___opcoes">
-                            <select class="container__personalizar___selecao-linguagem" id="linguagem">
+                            <select class="container__personalizar___selecao-linguagem" id="linguagem" data-linguagem>
                                 <option class="opcao-linguagem" value="javascript">JavaScript</option>
                                 <option class="opcao-linguagem" value="html">HTML</option>
                                 <option class="opcao-linguagem" value="css">CSS</option>
@@ -85,8 +87,8 @@
 
         <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.7.2/build/highlight.min.js"></script>
         <script src="index.js"></script>
-        <script src="componentes/corCodigo.js"></script>
+        <script src="componentes/corCodigo.js"></script>        
+        
         <script src="componentes/novoProjeto.js"></script>
-        <script src="componentes/adicionarCodigo.js"></script>
     </body>
 </html>

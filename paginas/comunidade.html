@@ -21,14 +21,14 @@
     </head>
     <body class="corpo">
         <header class="cabecalho">
-            <h1 class="logo">
-                <img src="../asseds/img/Logo-tablet.png" alt="logo AluraDEV" class="cabecalho__imagem-logo">
-            </h1>
-            <input type="text" class="cabecalho__barra-pesquisa" placeholder="Busque po algo">
-            <div class="cabecalho__perfil">
-                <img src="../asseds/img/foto-perfil.png" alt="foto perfil do usuario logado" class="cabecalho__perfil___imagem">
-                <h2 class="cabecalho__perfil___usuario">Harry</h2>
-                <img src="../asseds/img/botao-menu.png" alt="botao menu" class="botao-hamburgue">
+            <h1 class="logo"><img src="../asseds/img/logo.png" alt="logo AluraDEV" class="cabecalho__imagem-logo"></h1>
+            <div class="input-perfil">
+                <input type="text" class="cabecalho__barra-pesquisa" placeholder="Busque po algo">
+                <div class="cabecalho__perfil">
+                    <img src="../asseds/img/foto-perfil.png" alt="foto perfil do usuario logado" class="cabecalho__perfil___imagem">
+                    <h2 class="cabecalho__perfil___usuario">Harry</h2>
+                    <img src="../asseds/img/botao-menu.png" alt="botao menu" class="botao-hamburgue">
+                </div>
             </div>
         </header>
         <main class="container">
@@ -40,7 +40,7 @@
                 </ul>
             </nav>
             <section class="container__projetos" data-mural>
-                <div class="caixa-projetos">
+                <div class="caixa-projetos"> 
                     <div class="caixa-projeto-textarea caixa-cor-1">
                         <textarea class="container__projetos___textarea">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj) const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res) const unfold = (f, seed) => { const go = (f, seed, acc) => { const res = f(seed) return res ? go(f, res[1], acc.concat([res[0]])) : acc } return go(f, seed, []) }
                         </textarea>
@@ -153,9 +153,8 @@
             </section>
         </main>
        
-        <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.7.2/build/highlight.min.js"></script>
+        <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.7.2/build/highlight.min.js"></script>       
+        <script src="../componentes/carregaCodigo.js"></script>
         
-        
-        <script src="../componentes/adicionarCodigo.js"></script>
     </body>
 </html>

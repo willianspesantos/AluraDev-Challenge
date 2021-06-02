@@ -1,13 +1,19 @@
 .cabecalho {
-    align-items: center;
-    display: flex;
+    margin-bottom: 2rem; 
+    display: flex;   
+    width: 100%;
     justify-content: space-between;
-    margin-bottom: 2rem;
-    
+    align-items: center;
 }
 
 .logo {
-    max-width: 10%;
+    max-width: 25%;
+}
+
+.input-perfil {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
 }
 
 .cabecalho__barra-pesquisa {
@@ -19,14 +25,16 @@
     font-size: 1rem;
     height: 3.5rem;
     padding: 1rem 0.9rem;
-    width: 50%;
+    width: 67%;
+   
 }
 
 .cabecalho__perfil {
     align-items: center;
     display: flex;
     justify-content: flex-end;
-    max-width: 22%;
+    width: 33%;
+    
 }
 
 .cabecalho__perfil___usuario {
@@ -40,17 +48,20 @@
 }
 
 @media screen and (max-width: 768px) {
-    .logo {
-        max-width: 30%;
-    }
-
+    
     .cabecalho__imagem-logo {
-        width: 70px;
+        width: 100%;
+    }
+    
+    .input-perfil {        
+        justify-content: space-between;
+        width: 80%;
     }
 
     .cabecalho__barra-pesquisa {
-        width: 70%;
+        width: 80%;
         height: 30px;
+        margin-left: 0.5rem;
     }
     
     .cabecalho__perfil___imagem {
@@ -76,4 +87,8 @@
         display: none;
     }
 
+    .input-perfil {        
+        justify-content: flex-end;
+        
+    }
 }
