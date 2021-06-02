@@ -1,3 +1,5 @@
+//muda a cor escolhida no campo personalizaçao para caixa do codigo
+
 const selecionarCor = document.querySelector('[data-opcaoCor]')
 
 selecionarCor.addEventListener('change', (evento)=>{

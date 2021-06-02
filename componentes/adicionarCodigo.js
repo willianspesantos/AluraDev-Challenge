@@ -1,3 +1,5 @@
+//cria a estrutura do mural para a pagina Comunidade
+
 const mural = document.querySelector('[data-mural]')
 
 function adicionaMural() {
