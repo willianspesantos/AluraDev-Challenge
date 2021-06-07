@@ -4,7 +4,8 @@ const novoProjeto = document.querySelector('[data-botaoAdicionar]')
 const nomeProjeto = document.querySelector('[data-nome-projeto]')
 const descricaoProjeto = document.querySelector('[data-descricao-projeto]')
 const tipoLinguagem = document.querySelector('[data-linguagem]')
-const codigo = document.querySelector('[data-projeto]')
+const campoCodigo = document.querySelector('.container__principal___textarea')
+const cor = document.querySelector('[data-opcaoCor]')
 let numeroId = 1
 
 // guarda no localStorage quando clicado no botao salvar
@@ -26,7 +27,8 @@ function montaProjeto() {
             'projetoNome': nomeProjeto.value,
             'projetoDescricao': descricaoProjeto.value,
             'projetoLinguagem': tipoLinguagem.value,
-            'codigo': codigo.textContent
+            'codigo': campoCodigo.querySelector('code').innerText,
+            'cor' : cor.value
         }
     }
     return projetoSalvo

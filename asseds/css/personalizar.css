@@ -19,6 +19,7 @@
     border: none;
     border-radius: 8px;
     box-sizing: border-box;
+    color: var(--branco);
     height: 3.5rem;
     margin-bottom: 1rem;     
     padding: 1rem 0.9rem;   
@@ -26,15 +27,26 @@
 
 }
 
+.campo-projeto__input-projeto:hover {
+    background: #ffffff3d;
+    color: #ffffffc4;
+}
+
 .campo-projeto__textarea-descricao {
     background: var(--background-input);
     border: none;
     border-radius: 8px;    
     box-sizing: border-box;
+    color: var(--branco);
     height: 5rem;
     padding: 1rem 0.9rem;  
     margin-bottom: 2.875rem;
     resize: none;
+}
+
+.campo-projeto__textarea-descricao:hover {
+    background: #ffffff3d;
+    color: #ffffffc4;
 }
 
 .container__personalizar___titulo {
@@ -54,10 +66,19 @@
     background: var(--background-input);
     border: none;
     border-radius: 8px;  
-    color: rgba(255, 255, 255, 0.4);
+    color: #ffffff66;
     height: 3.5rem;  
     padding: 1rem 0.9rem;
     margin-bottom: 1rem;
+}
+
+.container__personalizar___selecao-linguagem:hover {
+    background: #ffffff3d;
+    color: #ffffffc4;
+}
+
+.opcao-linguagem {
+    background: #383838;
 }
 
 .caixa-cores {

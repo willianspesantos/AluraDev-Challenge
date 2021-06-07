@@ -7,7 +7,10 @@
 .caixa-projetos {
     background: rgba(0, 0, 0, 0.16);
     box-sizing: border-box;
-    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 30rem;
     margin-bottom: 3rem;
     margin-left: 1rem;
     width: 47%;
@@ -17,7 +20,25 @@
     border: none;
     border-radius: 8px;
     box-sizing: border-box;
+    height: 18rem;
     padding: 1.5rem;
+}
+
+.projetos__link {
+    text-decoration: none;
+}
+
+.projetos__pre {
+    box-sizing: border-box;
+    height: 100%;
+    margin: 0rem;
+}
+
+.projetos__code {
+    border-radius: 8px;
+    box-sizing: border-box;
+    height: 90%;
+    margin: 0rem;
 }
 
 .caixa-cor-1 {
@@ -43,14 +64,16 @@
     box-sizing: border-box;
     color: var(--branco);
     font-size: 0.6875rem;
-    height: 15rem;
+    height: 100%;
     padding: 2.125rem 0.75rem;
     resize: none;
     width: 100%;
 }
 
 .caixa-projeto-descricao {
-    padding: 1.5rem;
+    box-sizing: border-box;
+    height: 8rem;
+    padding: 1rem;
 }
 
 .container__projetos___titulo {
@@ -64,8 +87,28 @@
     font-size: 1rem;
 }
 
+.botao-balao, .botao-coracao {
+    border: none;
+    background: rgba(0, 0, 0, 0);
+    margin-right: 0.5rem;
+}
+
 .caixa-projeto-footer {
-    display: none;
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 4rem;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    margin: 0 1rem;
+}
+
+.span-botoes {
+    align-items: baseline;
+    color: var(--branco);
+    display: flex;
 }
 
 @media screen and (max-width: 768px) {
@@ -73,32 +116,12 @@
         flex-direction: column;
         width: 90vw;
     }
-
+    
     .caixa-projetos {
-        width: 100%;
-        margin-left: 0;
         height: auto;
+        margin-left: 0;
+        width: 100%;
     }
-
-    .caixa-projeto-footer {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-items: center;
-        padding-bottom: 1rem;
-        margin: 0 1rem;
-    }
-
-    .span-botoes {
-        display: flex;
-        align-items: baseline;
-        color: var(--branco);
-    }
-    .botao-balao, .botao-coracao {
-        border: none;
-        background: rgba(0, 0, 0, 0);
-        margin-right: 0.5rem;
-    }
-
+    
 
 }

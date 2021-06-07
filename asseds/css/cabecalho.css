@@ -32,9 +32,11 @@
 .cabecalho__perfil {
     align-items: center;
     display: flex;
-    justify-content: flex-end;
-    width: 33%;
-    
+    justify-content: flex-end;        
+}
+
+.cabecalho__perfil:focus {
+    background: rgba(255, 255, 255, 0.1);  
 }
 
 .cabecalho__perfil___usuario {
@@ -43,8 +45,13 @@
     margin-left: 0.5rem;
 }
 
-.botao-hamburgue {
+.link-botao-hamburgue {
     display: none;
+    padding: 0.5rem;
+}
+
+.link-botao-hamburgue:focus {
+    background: rgba(255, 255, 255, 0.1);
 }
 
 @media screen and (max-width: 768px) {
@@ -59,16 +66,16 @@
     }
 
     .cabecalho__barra-pesquisa {
-        width: 80%;
         height: 30px;
         margin-left: 0.5rem;
+        width: 80%;
     }
     
-    .cabecalho__perfil___imagem {
+    .cabecalho__perfil {
         display: none;
     }
 
-    .botao-hamburgue {
+    .link-botao-hamburgue {
         display: block;
     }
 

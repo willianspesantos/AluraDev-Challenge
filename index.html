@@ -23,11 +23,11 @@
             <h1 class="logo"><img src="asseds/img/logo.png" alt="logo AluraDEV" class="cabecalho__imagem-logo"></h1>
             <div class="input-perfil">
                 <input type="text" class="cabecalho__barra-pesquisa" placeholder="Busque po algo">
-                <div class="cabecalho__perfil">
+                <a href="#" class="cabecalho__perfil">
                     <img src="asseds/img/foto-perfil.png" alt="foto perfil do usuario logado" class="cabecalho__perfil___imagem">
                     <h2 class="cabecalho__perfil___usuario">Harry</h2>
-                    <img src="../asseds/img/botao-menu.png" alt="botao menu" class="botao-hamburgue">
-                </div>
+                    <a href="#" class="link-botao-hamburgue"><img src="../asseds/img/botao-menu.png" alt="botao menu" class="botao-hamburgue"></a>
+                </a>
             </div>
         </header>
         <main class="container">
@@ -37,8 +37,7 @@
                     <li class="container__menu___item"><a href="index.html" class="item__link selecionado"><img src="asseds/img/editorCodigo.png" alt="" class="item__imagem">Editor de Código</a></li>
                     <li class="container__menu___item"><a href="paginas/comunidade.html" class="item__link"><img src="asseds/img/comunidade.png" alt="" class="item__imagem">Comunidade</a></li>                    
                 </ul>
-            </nav>
-            
+            </nav>            
             <section container__principal>
                 <div class="caixa-container-principal" data-caixa-container>
                     <div class="container__principal___textarea">
@@ -52,7 +51,6 @@
                     </div>                    
                 </div>
                 <button class="container__principal___botao">Visualizar com o highlight</button>
-
             </section>
             <section class="container__personalizar">
                 <form class="formulario">
@@ -65,7 +63,7 @@
                         <h3 class="container__personalizar___titulo">personalização</h3>
                         <div class="container__personalizar___opcoes">
                             <select class="container__personalizar___selecao-linguagem" id="linguagem" data-linguagem>
-                                <option class="opcao-linguagem" value="javascript">JavaScript</option>
+                                <option class="opcao-linguagem" value="javascript" selected>JavaScript</option>
                                 <option class="opcao-linguagem" value="html">HTML</option>
                                 <option class="opcao-linguagem" value="css">CSS</option>
                             </select>
@@ -85,10 +83,10 @@
 
         </main>
 
-        <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.7.2/build/highlight.min.js"></script>
-        <script src="index.js"></script>
+        <script src="componentes/estiloHighlight.js"></script>
         <script src="componentes/corCodigo.js"></script>        
-        
         <script src="componentes/novoProjeto.js"></script>
+        <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.7.2/build/highlight.min.js"></script>
+        
     </body>
 </html>
