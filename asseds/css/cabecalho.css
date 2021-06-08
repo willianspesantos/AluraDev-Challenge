@@ -32,7 +32,8 @@
 .cabecalho__perfil {
     align-items: center;
     display: flex;
-    justify-content: flex-end;        
+    justify-content: flex-end;  
+    text-decoration: none;      
 }
 
 .cabecalho__perfil:focus {

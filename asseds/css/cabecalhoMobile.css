@@ -1,0 +1,29 @@
+.cabecalho-mobile {
+    display: none;
+} 
+
+@media screen and (max-width: 768px) {
+        
+    .m-ativo {        
+        display: block;   
+        margin: 0 auto;
+        height: 5rem; 
+    }
+        
+    .container__menu___lista-mobile{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .container__menu___item {
+        margin-left: 1rem;
+
+    }
+    .container__menu___titulo{
+        display: none;
+    }
+    
+}

@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="asseds/css/principal.css">
         <link rel="stylesheet" href="asseds/css/personalizar.css">
         <link rel="stylesheet" href="asseds/css/corDeFundoCaixaCodigo.css">
+        <link rel="stylesheet" href="asseds/css/cabecalhoMobile.css">
         <link rel="stylesheet" href="asseds/temaHighlight/dracula.css">
         <link rel="stylesheet" href="asseds/temaHighlight/temaVariado.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -26,10 +27,19 @@
                 <a href="#" class="cabecalho__perfil">
                     <img src="asseds/img/foto-perfil.png" alt="foto perfil do usuario logado" class="cabecalho__perfil___imagem">
                     <h2 class="cabecalho__perfil___usuario">Harry</h2>
-                    <a href="#" class="link-botao-hamburgue"><img src="../asseds/img/botao-menu.png" alt="botao menu" class="botao-hamburgue"></a>
+                    <a href="#" class="link-botao-hamburgue" data-botao-mobile><img src="../asseds/img/botao-menu.png" alt="botao menu" class="botao-hamburgue"></a>
                 </a>
             </div>
         </header>
+        <div class="cabecalho-mobile" data-menu-ativo>
+            <nav class="container__menu-mobile">
+                <ul class="container__menu___lista-mobile">
+                    <h3 class="container__menu___titulo">menu</h3>
+                    <li class="container__menu___item"><a href="index.html" class="item__link selecionado"><img src="asseds/img/editorCodigo.png" alt="" class="item__imagem">Editor de Código</a></li>
+                    <li class="container__menu___item"><a href="paginas/comunidade.html" class="item__link"><img src="asseds/img/comunidade.png" alt="" class="item__imagem">Comunidade</a></li>                    
+                </ul>
+            </nav>
+        </div>
         <main class="container">
             <nav class="container__menu">
                 <ul class="container__menu___lista">
@@ -86,6 +96,7 @@
         <script src="componentes/estiloHighlight.js"></script>
         <script src="componentes/corCodigo.js"></script>        
         <script src="componentes/novoProjeto.js"></script>
+        <script src="componentes/menuMobile.js"></script>
         <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.7.2/build/highlight.min.js"></script>
         
     </body>

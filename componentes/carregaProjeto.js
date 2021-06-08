@@ -38,11 +38,11 @@ function mostraProjetos() {
                 <button class="botao-balao">
                     <img src="../asseds/img/botao-balao.png" alt="botao de comentarios">
                 </button>
-                <h4>9</h4>
+                <h4>0</h4>
                 <button class="botao-coracao">
                     <img src="../asseds/img/botao-coracao.png" alt="botao amei o projeto">
                 </button>
-                <h4>3</h4>
+                <h4>0</h4>
             </span>
             <span class="cabecalho__perfil">
                 <img src="../asseds/img/foto-perfil.png" alt="foto perfil do usuario logado" class="cabecalho__perfil___imagem">
