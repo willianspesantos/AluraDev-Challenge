@@ -1,4 +1,14 @@
 const mural = document.querySelector('[data-mural]')
+if (localStorage.length == 0) {
+    mural.innerHTML = `
+    <div class="caixa-projeto-aviso">
+        <h1 class"">Nenhum projeto adicionado!</h1>
+        <p>Para adicionar um novo projeto click no icone abaixo!</p>
+        <a href="../index.html">	
+        &#10133;</a>
+    </div>
+    `
+}
 new function() {
     mostraProjetos()
 }
@@ -18,6 +28,7 @@ function mostraProjetos() {
         //adicionando o filho
         
         mural.appendChild(muralProjetos)
+
                 
         muralProjetos.innerHTML = `
         <div class="caixa-projeto-textarea caixa-cor-${projetos[c].detalhesProjeto.cor}">

@@ -111,6 +111,17 @@
     display: flex;
 }
 
+.caixa-projeto-aviso {
+    color: var(--branco);
+    text-align: center;
+    width: 58vw;
+    margin-top: 3rem;
+}
+
+.caixa-projeto-aviso a {
+    text-decoration: none;
+}
+
 @media screen and (max-width: 768px) {
     .container__projetos {
         flex-direction: column;
@@ -121,6 +132,11 @@
         height: auto;
         margin-left: 0;
         width: 100%;
+    }
+
+    .caixa-projeto-aviso {
+        text-align: center;
+        width: 100vw;
     }
     
 
